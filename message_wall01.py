@@ -10,4 +10,4 @@ def message_wall_app(environ, start_response):
 httpd = make_server('', 8000, message_wall_app)
 print("Serving on port 8000...")
 
-httpd.server_forever()
+httpd.serve_forever()
